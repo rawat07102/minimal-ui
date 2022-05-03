@@ -18,12 +18,12 @@ const FeaturedSection = () => {
 
   return (
     <div className="shadow-lg rounded-2xl row-span-2 overflow-hidden flex h-80 relative">
-      <div className="absolute z-50 h-9 text-white right-0 top-4">
+      <div className="absolute z-50 h-9 text-white right-1 top-4">
         <button className="opacity-50 px-1 hover:opacity-100" onClick={slideRight}>
-          <ArrowLeftRoundedIcon className="h-9 w-10" />
+          <ArrowLeftRoundedIcon fontSize="large"/>
         </button>
         <button className="opacity-50 px-1 hover:opacity-100" onClick={slideLeft}>
-          <ArrowRightRoundedIcon className="h-9 w-10" />
+          <ArrowRightRoundedIcon fontSize="large" />
         </button>
       </div>
       <div className={`w-full h-full flex transition-transform ease-in-out duration-500`} style={{
