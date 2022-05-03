@@ -1,11 +1,10 @@
 import Sidebar from "../src/components/Sidebar";
 import Topbar from "../src/components/Topbar";
 import HeroSection from "../src/components/HeroSection";
-import FeaturedSection from "../src/components/FeaturedSection";
 import InfoCard from "../src/components/InfoCard";
 import CurrentDownloadSection from "../src/components/CurrentDownloadSection";
 import AreaInstalledSection from "../src/components/AreaInstalledSection";
-
+import FeaturedSection from "../src/components/FeaturedSection";
 
 const IndexPage = () => {
   return (
@@ -16,9 +15,9 @@ const IndexPage = () => {
         <div className="grid grid-cols-3 pt-6 auto-rows-max gap-6 h-screen">
           <HeroSection />
           <FeaturedSection />
-          <InfoCard />
-          <InfoCard />
-          <InfoCard />
+          <InfoCard title="Total Active Users" />
+          <InfoCard title="Total Installed" />
+          <InfoCard title="Total Downloads" />
           <CurrentDownloadSection />
           <AreaInstalledSection />
         </div>
